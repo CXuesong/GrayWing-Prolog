@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Graywing": {
+      "commandName": "Project",
+      "workingDirectory": "work"
+    }
+  }
+}

@@ -5,4 +5,9 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="CXuesong.MW.MwParserFromScratch" Version="0.2.0" />
+    <PackageReference Include="CXuesong.MW.WikiClientLibrary" Version="0.6.0-int1" />
+  </ItemGroup>
+
 </Project>
