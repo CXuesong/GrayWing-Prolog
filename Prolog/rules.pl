@@ -4,7 +4,7 @@ child(X, Y) :- child(X, Y, _); child(X, _, Y).
 son(X, Y) :- male(X), child(X, Y).
 daughter(X, Y) :- female(X), child(X, Y).
 
-parent(X, Y) :- son(Y, X).
+parent(X, Y) :- child(Y, X).
 father(X, Y) :- male(X), parent(X, Y).
 mother(X, Y) :- female(X), parent(X, Y).
 
