@@ -122,7 +122,7 @@ namespace Graywing
         {
             var introLine = root.Lines.TakeWhile(l => !(l is Heading)).NonEmptyLines().FirstOrDefault();
             if (introLine == null) return null;
-            var introContent = introLine.ToPlainText();
+            var introContent = introLine.ToPlainText(NodePlainTextOptions.RemoveRefTags);
             if (tomMatcher.IsMatch(introContent)) return true;
             if (sheCatMatcher.IsMatch(introContent)) return false;
             return null;
